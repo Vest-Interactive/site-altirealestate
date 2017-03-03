@@ -1,0 +1,106 @@
+/*!
+ * Theme Name: Alti Real Estate
+ * Theme URI: http://altirealestate.com
+ * Description: Custom Theme and App developed for Greg Taylors ALTI Real Estate
+ * Version: 1.0.0
+ * Author: Andrew Starosciak
+ * Author URI: http://vestadvertising.com
+ * Tags: HTML5, CSS3
+ *
+ * License: MIT
+ * License URI: http://opensource.org/licenses/mit-license.php
+ */
+
+@import "normalize";
+@import "global";
+
+@import "fonts";
+@import "typography";
+
+
+@import "vendor";
+@import "grid";
+
+@import "index-page";
+@import "about-page";
+@import "page-sell";
+@import "page-resources";
+@import "page-team";
+
+@import "modal-property";
+@import "sidebar-property-search";
+@import "property-search-page";
+@import "property-details-page";
+
+@import "blog-archive";
+@import "blog-single";
+
+@import "_component-exclusive";
+
+@import "template-header";
+
+@import "animations";
+
+#map-search {
+	width: 100%;
+	height: 100%;
+}
+
+.pull-right { float: right; }
+
+.row { clear: both;}
+.col { float: left; }
+.col-half {
+	width: 50%;
+}
+
+//moved col-two-third & .col-one-third   =>   page-sell.scss
+
+.col-one-of-three {
+	width: 33%;
+}
+
+.italic { font-style: italic; }
+
+.bold {
+	font-weight: 800;
+}
+
+.grid-width {
+	max-width: 1004px;
+}
+
+.block-center {
+	margin: 0 auto;
+}
+
+html {
+	color: $grey1;
+}
+
+.hidden {
+	display: none;
+}
+
+label.clip {
+	position: absolute !important; 
+			clip: rect(1px 1px 1px 1px); /* IE6, IE7 */ 
+			clip: rect(1px, 1px, 1px, 1px); 
+}
+
+
+// Pages
+$pageNavHeight: 100px;
+.page-navigation-title {
+	background-color: $purple1;
+	height: $pageNavHeight;
+	color: #fff;
+	padding-left: 15px;
+
+	h1 {
+		font-size: 2.65em;
+		line-height: $pageNavHeight;
+		padding: 0; margin: 0;
+	}
+}
+

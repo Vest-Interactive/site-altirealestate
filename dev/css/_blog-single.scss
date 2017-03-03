@@ -1,0 +1,39 @@
+
+#single-blog-article {
+	max-width: 700px;
+	margin: 0 auto;
+	list-style-type: none;
+	padding: 0 15px;
+	margin-bottom: 75px;
+
+	h1 {
+		color: $purple2;
+		font-size: 4rem;
+    line-height: 5rem;
+    margin: 20px 0;
+	}
+
+	.sub-header {
+		margin-top: 35px;
+		font-size: 1.4rem;
+		margin-bottom: 50px;
+		padding-bottom: 50px;
+    border-bottom: 1px solid #e5e6eb;
+	}
+
+	p {
+		font-family: $blogFont;
+		font-weight: 300;
+		font-size: 1.2rem;		
+		color: #484747;
+		vertical-align: baseline;
+		line-height: 1.75rem;
+	}
+}
+
+#blog-single {
+
+	#news-tiles-container {
+		    border-top: 1px solid #e5e6eb;
+	}
+}

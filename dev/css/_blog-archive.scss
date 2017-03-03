@@ -1,0 +1,88 @@
+
+/*
+ *	Blog Archive SCSS
+ */
+
+ #news-tiles-container {
+ 	max-width: 1300px;
+ 	margin: 0 auto;
+ 	list-style-type: none;
+ 	padding: 0;
+ 	overflow: hidden;
+
+
+
+ 	li:nth-child(2n+3) {
+ 		border-left: 1px solid #e5e6eb;
+ 		//padding: 0;
+ 	}
+
+ 	li:first-child() {
+ 		border-left: none;
+ 	}
+
+ }
+
+ .blog-archive-grid {
+ 	li {
+		padding-left: 0;
+    padding-right: 0;
+	}
+ }
+
+ .news-post {
+ 	  position: relative;
+    //cursor: pointer;       
+    padding: 58px 2% 60px 2%;
+   border-bottom: 1px solid #e5e6eb;
+   overflow: hidden;
+   //clear: both;
+
+	.image-wrapper {
+		img {
+			width: 100%;
+		}
+	}
+
+	.text-wrapper {
+
+		h2 {
+			color: $purple2;
+			font-size: 2.7rem;
+			line-height: 3.5rem;
+			margin: 20px 0;
+		}
+
+		p {
+			font-size: 1.2rem;
+			margin-bottom: 45px;
+		}
+
+		.cta {
+			text-transform: uppercase;
+			text-decoration: underline;
+			color: $darkGold;
+		}
+	}
+ }
+
+ .news-post.featured {
+ 	 padding: 58px 2% 60px 2%;
+   border-bottom: 1px solid #e5e6eb;
+   clear: both;
+   overflow: hidden;
+ }
+
+ .news-post.small {
+
+ }
+ .news-post.bordered {
+    border-left: 1px solid #e5e6eb;
+ }
+
+
+ @media screen and (max-width: 768px) {
+   #news-tiles-container {
+   	padding: 0;
+   }
+ }

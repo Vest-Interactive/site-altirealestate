@@ -1,0 +1,41 @@
+
+#index {
+	
+	.photo-wrapper {
+		background-image: url($themeImages+'images/home-bg.jpg');
+		background-repeat: no-repeat;
+		height: 600px;
+		background-size: cover;
+	}
+
+	.btn-wrapper {
+		text-align: center;
+	}
+
+	a {
+		display: inline-block;
+		padding: 35px 55px;
+		background-color: $pink2;
+		border-radius: 15px;
+		color: #fff;
+		text-decoration: none;
+		font-size: 45px;
+	}
+
+	.buy-a-home {
+		margin-top: 125px;
+		transition: 0.2s ease-in-out;
+		&:hover {
+			background-color: $purple1;
+		}
+	}
+
+	.sell-a-home {
+		margin-top: 45px;
+		transition: 0.2s ease-in-out;
+		&:hover {
+			background-color: $purple1;
+		}
+	}
+
+}

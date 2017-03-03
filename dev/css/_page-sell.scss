@@ -1,0 +1,293 @@
+
+$mobileHeader : 865px;
+
+.map-bg {
+	background-image: url($themeImages+'/images/sell/sell-bg.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	overflow: hidden;
+	clear: both;
+}
+
+.home-value-wrapper {
+
+	padding-top: 80px;
+	padding-bottom: 40px;
+	clear: both;
+	overflow: hidden;
+	position: relative;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	// Caption on bottom
+	.caption-block {
+		width: 60%;
+		position: absolute;
+		bottom: 10px;
+		left: 15px;
+		color: $grey2;
+		font-size: 1em;
+	}
+
+	// Left side block
+	.main-wrapper {
+		padding-right: 50px;
+		position: relative;
+
+		h1 {
+			color: $darkGold;
+			font-size: 3.250em;
+			padding: 0;
+			margin: 0;
+		}
+
+		// Home Value Search Form
+		form {
+			margin-top: 20px;
+			margin-bottom: 40px;
+			position: relative;
+		}
+
+		input {
+			background-color: #f1f1f1;
+			border: 0;
+			width: 100%;
+			display: inline-block;
+			padding: 10px 15px;
+			padding-right: 75px;
+			color: $purple1;
+			border-bottom-right-radius: 10px;
+	    border-top-right-radius: 10px;
+	    border-top-left-radius: 10px;
+	    border-bottom-left-radius: 10px;
+	    font-size: 1.6em;
+	    line-height: 2.1em;
+		}
+
+		button {
+			position: absolute;
+			top: 5px;
+			right: 5px;
+			height: 64px;
+			width: 64px;
+	    border-bottom-right-radius: 10px;
+	    border-top-right-radius: 10px;
+	    border: 0;
+	    background-color: $purple1;
+	    color: #fff;
+	    font-size: 2em;
+		}
+
+		p {
+			font-size: 1.5em;
+			line-height: 2em;
+		}
+
+	}
+
+	// Property Estimate Details
+	.property-estimation-block {
+
+		.address-block {
+			color: $purple2;
+			margin: 20px 0;
+		}
+
+		.street {
+			font-size: 3.250em;
+			line-height: 1;
+		}
+
+		.city-state-zip {
+			font-size: 2.5em;
+			line-height: 1;
+		}
+
+		.property-details {
+			font-size: 1.875em;
+			line-height: 1.5;
+			margin-top: 15px;
+		}
+
+		// Graph
+		.graph-block {
+			margin-bottom: 45px;
+				img.graph {
+					width: 80%;
+					min-width: 300px;
+				}
+
+		}
+	
+	}
+
+}
+
+.property-comps-block {
+	h2 {
+		color: $darkGold;
+		font-size: 2em;
+		margin: 0;
+		padding: 0;
+	}
+
+	ul {
+		list-style-type: none;
+	}
+
+	.amount {
+		font-size: 1.2em;
+		font-weight: 700;
+
+		span {
+			font-size: 10px;
+		}
+	}
+
+	margin-bottom: 65px;
+}
+
+
+
+
+
+
+
+
+.contact-block {
+	padding: 25px 15px;
+	border: 1px solid #707070;
+	background-color: #fff;
+
+	.cta {
+		font-size: 2em;
+		line-height: 1.2em;
+		margin-bottom: .65em;
+		color: $purple1;
+	}
+}
+
+.cta-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+	span { font-family: $copyFont; }
+	
+	li {
+		margin-bottom: 10px;
+		position: relative;
+	}
+
+	li:before {
+		font-size: 2em;
+	}
+
+	.fa:before {
+		position: absolute;
+		
+	}
+
+	.fa a {
+		margin-left: 45px;
+		font-size: 1.15em;
+		line-height: 2em;
+		vertical-align: middle;
+		height: 2em;
+	}
+
+	a { color: inherit; text-decoration: none;}
+
+	.phone {
+		font-size: 1.5em;
+		line-height: 2em;
+		vertical-align: middle;
+		height: 2em;
+		font-weight: 700;
+
+
+		&:before {
+	    content: "\f095";
+	    color: $purple1;
+	    font-size: 1.5em;
+		}
+	}
+	.email {
+		color: $purple1;
+		&:before {
+			content: "\f0e0";
+			color: $purple1;
+		}
+	}
+	.fax {
+		color: $grey2;
+		&:before {
+			content: "\f1ac";
+			color: $purple1;
+		}
+	}
+
+	.president {
+		margin-top: 30px;
+		font-weight: 700;
+		font-size: 1.15em;
+		line-height: 1em;
+		color: $purple1;
+	}
+
+	.mobile {
+		font-size: 1.15em;
+		line-height: 1em;
+		font-weight: 700;
+	}
+
+}
+
+#estimate-error {
+	padding-top: 15px;
+	font-size: 1.25em;
+	color: red;
+}
+
+
+.col-two-third {
+	width: 64%;
+}
+.col-one-third {
+	width: 36%;
+}
+
+
+// Responsive
+.col-two-third, .col-one-third {
+	@media screen and (max-width: $mobileHeader) {
+		width: 100%;		
+	}
+}
+@media screen and (max-width: $mobileHeader) {
+	.home-value-wrapper {
+		padding-top: 40px;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 100px;
+
+		.caption-block {
+			padding-left: 15px;
+			padding-right: 15px;
+			width: 100%;
+		}
+	}
+
+	.cta-list {
+		li {
+			display: block;
+		}
+	}
+
+
+}
+
+
+

@@ -1,0 +1,70 @@
+
+@import url(https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911);
+
+#about, #team-page {
+	background-color: $purple1;
+	padding: 50px;
+
+	@media screen and (max-width: 768px) {
+		padding: 10px;
+	}
+
+	.light {
+		font-weight: 300;
+	}
+
+	.dictionary-wrapper {
+		color: #fff;
+		background-color: $pink2;
+		padding: 25px;
+
+	}
+
+	.dictionary-wrapper {
+
+		h1 {
+			font-family: 'Goudy Bookletter 1911', serif;
+			padding: 0;
+			margin: 0;
+			font-size: 3rem;;
+			letter-spacing: 2px;
+		}
+
+		.type {
+			font-family: 'Goudy Bookletter 1911', serif;
+			font-size: 2.3rem;
+		}
+
+		ol {
+			font-family: 'Goudy Bookletter 1911', serif;
+			font-size: 1.75rem;
+	    list-style-type: upper-roman;
+
+			li:first-child {
+				font-weight: bold;
+				margin-bottom:35px;
+			}
+
+		}
+
+		ol li span {
+			display: inline-block;
+
+			&:hover {
+				text-decoration: underline;
+				cursor: pointer;
+			}
+		}
+	}
+
+
+	
+}
+
+#credential-modal {
+	    padding-bottom: 45px;
+
+	.cred-description {
+    line-height: 1.75;
+	}
+}

@@ -1,0 +1,140 @@
+
+#resources-page {
+
+
+	.page-title {
+		color: $purple1;
+	}
+}
+
+.resources-wrapper {
+	padding: 25px 15px;
+}
+
+.resources-wrapper {
+	@media screen and (max-width: 768px) {
+		padding: 0 15px;
+
+		.col-half {
+			width: 100%;
+		}
+
+		.financial-planners {
+			line-height: 1.2;
+		}
+	}
+}
+
+
+.resource-detail-block {
+	padding: 20px 0;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+
+		li {
+			margin-top: 8px;
+			font-size:1.1em;
+			color: $grey1;
+		}
+
+		a {
+			text-decoration: none;
+			color: $purple1;
+		}
+	}
+	
+	h3 {
+		position: relative;
+		min-height: 65px;
+		line-height: 65px;
+		padding-left: 75px;
+		font-size: 2.375em;
+		margin: 0;
+		color: $purple1;
+
+		&:before {
+			content: '';
+			position: absolute;
+			background-size: cover;
+			left: 0;
+		}
+	}
+
+	.lenders:before {
+		background-image: url($themeImages+'/images/resources/lenders.png');
+		width: 56px;
+		height: 50px;
+		top: 9px;
+	}
+
+	.insurance:before {
+		background-image: url($themeImages+'/images/resources/insurance.png');
+		width: 49px;
+		height: 59px;
+		top: 1px;
+	}
+
+	.contractors:before {
+		background-image: url($themeImages+'/images/resources/contractors.png');
+		width: 48px;
+		height: 58px;
+		top: 0;
+	}
+
+	.small-business {
+		line-height: 1.2;
+		padding-right: 45px;
+	}
+	.small-business:before {
+		background-image: url($themeImages+'/images/resources/small-business.png');
+		width: 51px;
+		height: 57px;
+		top: 12px;
+	}
+
+	.inspectors:before {
+		background-image: url($themeImages+'/images/resources/inspectors.png');
+		width: 53px;
+		height: 53px;
+		top: 0px;
+	}
+
+	.painters:before {
+		background-image: url($themeImages+'/images/resources/painters.png');
+		width: 53px;
+		height: 53px;
+		top: 0px;
+	}
+
+	.estate-planning:before {
+		background-image: url($themeImages+'/images/resources/estate-planning.png');
+		width: 53px;
+		height: 53px;
+		top: 0px;
+	}
+
+	.financial-planners:before {
+		background-image: url($themeImages+'/images/resources/financial-planners.png');
+		width: 53px;
+		height: 53px;
+		top: 0px;
+	}
+
+	.attorney:before {
+		background-image: url($themeImages+'images/resources/court.png');
+		width: 53px;
+		height: 53px;
+		top: 0;
+	}
+
+	.hvac:before {
+		background-image: url($themeImages+'images/resources/thermostat.png');
+		width: 53px;
+		height: 53px;
+		top: 0;
+	}
+
+}

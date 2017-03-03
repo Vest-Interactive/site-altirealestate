@@ -1,0 +1,71 @@
+
+.team-wrapper {
+		color: #fff;
+		background-color: $pink2;
+		padding: 25px;
+
+
+		clear: both;
+		overflow: hidden;
+
+		.row {
+			overflow: hidden;
+			clear: both;
+			padding-bottom: 45px;
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		.photo {
+			//border: 5px solid #fff;
+			//background-color: grey;
+
+			img {
+				width: 100%;
+				border: 5px solid #fff;
+			}
+		}
+
+		.copy {
+			padding: 20px;
+
+		}
+		.title-block {
+
+			h2 {
+				padding: 0;
+				margin: 0;
+				font-size: 2rem;
+				margin-bottom: 5px;
+			}
+
+			.title {
+				border-bottom: 1px dotted #fff;
+				display: inline-block;
+			}
+		}
+
+		.description-block {
+			p {
+				line-height: 1.5rem;
+				font-size:1.2rem;
+			}
+		}
+
+		.photo-right {
+			float: right;
+		}
+
+		@media screen and (max-width: 768px) {
+
+			padding: 12px; 
+
+			.col-two-third {
+				width: 100%;
+			}
+
+			.copy {
+				padding: 0;
+			}
+		}
+}

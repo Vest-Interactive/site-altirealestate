@@ -1,0 +1,254 @@
+
+$xsSize : 520px;
+
+// 
+#property-modal {
+	padding: 10px;
+	width: 600px;
+
+	$pricebar-height: 35px;
+	.price-bar {
+		height: $pricebar-height;
+		background-color: $primaryColor;
+		//font-size: 24px;
+		color: #fff;
+
+		.price {
+			line-height: $pricebar-height;
+			font-size: 16px;
+			padding-left: 10px;
+		}
+	}
+}
+
+#property-carousel {
+
+	//height: 300px;
+	height: 195px;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+
+
+	.photo-slide {
+		width: 100%;
+		//height: 300px;
+		height: 195px;
+		padding: 3px;
+	}
+
+	.photo {
+		height: 100%;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.slick-next {
+		right: 5px;
+	}
+	.slick-prev {
+		left: 5px;
+		z-index: 3;
+	}
+}
+
+.details-pane {
+	padding-right: 5px;
+
+	.address {
+		padding-top: 10px;
+		padding-left: 10px;
+		@media screen and (max-width: 680px) {
+			padding-left: 25px;
+		}
+	}
+
+	.details {
+
+		li {
+			font-size: 14px;
+			padding-bottom: 5px;
+		}
+		@media screen and (max-width: 680px) {
+			margin-left: 40px;
+		}
+	}
+
+	.property-detail-link {
+		text-align: center;
+		margin-bottom: 15px;
+		a {
+			text-decoration: none;
+			font-size: 1.1em;
+			border-bottom: 1px dotted $purple2;
+			color: $purple2;
+		}
+	}
+}
+
+.property-body {
+
+	padding-top: 5px;
+
+	.street {
+		color: $primaryColor;
+		font-size: 20px;
+	}
+
+	.sub-font-1 {
+		color: $textColor;
+		font-size: 18px;
+	}
+
+	ul {
+		font-size: 16px;
+	}
+
+	// Agent Half of the Body
+	.agent-pane {
+		display: block;
+		background-color: $pink;
+		width: 100%;
+		height: 100%;
+		min-height: 295px;
+		
+		border-bottom-right-radius: 5px;
+
+		@media screen and (max-width: 680px) {
+			border-bottom-left-radius: 5px;
+			min-height: 150px;
+		}
+		@media screen and (max-width: $xsSize) {
+			min-height: 100%;
+			float: none;
+			display: block;
+			height: 100%;
+			overflow: hidden;
+		}
+
+	}
+}
+
+.agent-pane {
+	padding: 10px;
+
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	.fa {
+		color: $primaryColor;
+		font-size: 24px;
+	}
+
+	.agent-block {
+		overflow: hidden;
+		clear: both;
+		@media screen and (max-width: 680px) {
+			float: left;
+		}
+
+		.photo {
+			float: left;
+			width: 30%;
+			height: 75px;
+
+			@media screen and (max-width: 680px) {
+				height: auto;
+				width: 100px;
+			}
+		}
+
+		.agent-details {
+			float: left;
+			padding-left: 10px;
+			@media screen and (max-width: 680px) {
+
+			}
+		}
+
+		.title {
+			font-size: 18px;
+			//font-weight: 800;
+			margin-top: 5px;
+		}
+
+		.name {
+			font-size: 1.35em;
+			font-weight: bold;
+		}
+
+		img { 
+			width: 100%;
+		}
+	}
+
+	ul {
+		list-style-type: none;
+		padding-top: 10px;
+		@media screen and (max-width: 680px) {
+			float: left;
+			padding-top: 0;
+			margin: 0;
+			margin-left: 10px;
+		}
+		@media screen and (max-width: $xsSize) {
+			margin-top: 15px;
+		}
+
+		li {
+			position: relative;
+			padding-bottom: 15px;
+		}
+
+		li:before {
+			display: inline-block;
+			font: normal normal normal 14px/1 FontAwesome;
+			font-size: inherit;
+			text-rendering: auto;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			position: absolute;
+			color: $primaryColor;
+			font-size: 26px;
+		}
+
+		.cell-phone:before {
+			content: "\f10b";
+			left: -25px;
+			top: -5px;
+		}
+		.fax-number:before {
+			content: "\f1ac";
+			left: -35px;
+			top: -5px;
+		}
+		.email:before {
+			content: "\f003";
+			left: -35px;
+			top: -5px;
+		}
+
+		.cell-phone {
+			font-weight: 800;
+		}		
+	}
+	.email, .name {
+		color: $primaryColor;
+	}
+}
+
+@media screen and (max-width: 680px) {
+	#property-modal {
+		width: 100%;
+
+		.col-half {
+			width: 100%;
+		}
+	}
+
+	
+}
